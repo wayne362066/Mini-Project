@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>遊戲檔案下載</title>
+    <!-- <link rel="stylesheet" href="./_css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/allcss.css">
+    <!-- <script src="./_js/bootstrap.bundle.js"></script> -->
+    <style>
+        body {
+            background-color: rgba(149, 239, 245, 0.425);
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 72px;
+            color: red;
+            text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black;
+            visibility: hidden;
+        }
+
+
+        .ka {
+            position: absolute;
+            top: 110%;
+            left: 25%;
+        }
+
+        #ka {
+            visibility: visible;
+        }
+
+        #kaEet {
+            visibility: hidden;
+            animation-play-state: paused;
+        }
+
+        #download1 {
+            position: absolute;
+            top: 85%;
+            left: 40%;
+        }
+
+        #download2 {
+            position: absolute;
+            top: 150%;
+            left: 80%;
+            visibility: hidden;
+        }
+
+        #download3 {
+            position: absolute;
+            top: 120%;
+            left: 10%;
+            visibility: hidden;
+        }
+
+        #ah1 {
+            cursor: default;
+            pointer-events: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="top">
+        <a href="./index.html" class="me-auto">
+            <div id="index"><img src="./img/TotK_TCH_Logo.png" id="indexLogo">
+        </a>
+    </div>
+    <div class="btn-container">
+        <a href="./play.html" onmouseover="showImage(1)" onmouseout="hideImage(1)">
+            <p class="btnTop">遊戲玩法介紹</p>
+        </a>
+        <a href="./gameNpc.html" onmouseover="showImage(2)" onmouseout="hideImage(2)">
+            <p class="btnTop">角色人物介紹</p>
+        </a>
+        <a href="./movie.html" onmouseover="showImage(3)" onmouseout="hideImage(3)">
+            <p class="btnTop">遊戲宣傳影片</p>
+        </a>
+        <a href="./download.html" onmouseover="showImage(4)" onmouseout="hideImage(4)">
+            <p class="btnTop">遊戲檔案下載</p>
+        </a>
+    </div>
+
+    <div class="btn-container">
+        <img src="./img/3299_cover_image_app.png" class="btnImg1">
+        <img src="./img/3299_cover_image_app.png" class="btnImg2">
+        <img src="./img/3299_cover_image_app.png" class="btnImg3">
+        <img src="./img/3299_cover_image_app.png" class="btnImg4">
+    </div>
+
+    <script>
+        function showImage(index) {
+            var imageElement = document.querySelector('.btnImg' + index);
+            imageElement.style.visibility = 'visible';
+        }
+
+        function hideImage(index) {
+            var imageElement = document.querySelector('.btnImg' + index);
+            imageElement.style.visibility = 'hidden';
+        }
+    </script>
+    <hr>
+    <div>
+        <br><br><br><br><br>
+        <a href="https://www.nintendo.com.hk/zelda/totk/index.html" id="ah1">
+            <h1 class="hidden-heading">請支持正版遊戲 不要下載來源不明的遊戲連結</h1>
+        </a>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <img src="./img/download.png" id="download1" onclick="showDownload2()">
+        <img src="./img/download.png" id="download2" onclick="showDownload3()">
+        <img src="./img/download.png" id="download3" onclick="showkaEet()">
+        <img src="./img/ka.png" class="ka" id="ka">
+        <img src="./img/ezgif.com-gif-maker.gif" class="ka" id="kaEet">
+
+
+    </div>
+    <a href="./movie.html" target="_top">
+        <div id="goTop"><img src="./img/ALttP_Master_Sword_Artwork.png" id="imgTop"></div>
+    </a>
+    <script>
+        function showDownload2() {
+            var download2Element = document.getElementById('download2');
+            download2Element.style.visibility = 'visible';
+
+            var download1Element = document.getElementById('download1');
+            download1Element.style.visibility = 'hidden';
+        }
+
+        function showDownload3() {
+            var download3Element = document.getElementById('download3');
+            download3Element.style.visibility = 'visible';
+
+            var download2Element = document.getElementById('download2');
+            download2Element.style.visibility = 'hidden';
+        }
+        function showkaEet() {
+            var download3Element = document.getElementById('kaEet');
+            download3Element.style.visibility = 'visible';
+            download3Element.style.animationPlayState = 'running';
+
+            var download3Element = document.getElementById('download3');
+            download3Element.style.visibility = 'hidden';
+
+            var kaElement = document.getElementById('ka');
+            kaElement.style.visibility = 'hidden';
+
+            setTimeout(function () {
+                var headingElement = document.querySelector('.hidden-heading');
+                headingElement.style.visibility = 'visible';
+
+                var kaElement = document.getElementById('ah1');
+                kaElement.style.cursor = 'pointer';
+                
+                var kaElement = document.getElementById('ah1');
+                kaElement.style.pointerEvents = 'auto';
+            }, 1500);
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

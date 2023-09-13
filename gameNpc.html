@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>角色人物介紹</title>
+    <!-- <link rel="stylesheet" href="./_css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/allcss.css">
+    <!-- <script src="./_js/bootstrap.bundle.js"></script> -->
+    <style>
+        body {
+            background-color: rgba(149, 239, 245, 0.425);
+            margin: 0px;
+        }
+
+        .imgLeft {
+            margin-left: auto;
+        }
+
+        .imgRight {
+            margin-left: auto;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divLink {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(16, 251, 217, 0.5) 20%, rgba(16, 251, 217, 1) 50%, rgba(16, 251, 217, 0.5) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .divZelda {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(235, 169, 46, 1) 20%, rgba(235, 169, 46, 1) 50%, rgba(235, 169, 46, 1) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .divKing {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(73, 192, 168, 1) 20%, rgba(73, 192, 168, 1) 50%, rgba(73, 192, 168, 1) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .divQueen {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(158, 128, 102, 1) 20%, rgba(158, 128, 102, 1) 50%, rgba(158, 128, 102, 1) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .divSidon {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(222, 96, 123, 1) 20%, rgba(222, 96, 123, 1) 50%, rgba(222, 96, 123, 1) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .divRiju {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(221, 94, 24, 1) 20%, rgba(221, 94, 24, 1) 50%, rgba(221, 94, 24, 1) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .divTulin {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(130, 133, 89, 1) 20%, rgba(130, 133, 89, 1) 50%, rgba(130, 133, 89, 1) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .divYunobo {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 147, 63, 1) 20%, rgba(255, 147, 63, 1) 50%, rgba(255, 147, 63, 1) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .divGanondorf {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(163, 33, 42, 1) 20%, rgba(163, 33, 42, 1) 50%, rgba(163, 33, 42, 1) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 30px;
+            font-family: "標楷體", Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .divRight {
+            flex-grow: 1;
+        }
+
+        .divLight {
+            flex-grow: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="top">
+        <a href="./index.html" class="me-auto">
+            <div id="index"><img src="./img/TotK_TCH_Logo.png" id="indexLogo">
+        </a>
+    </div>
+    <div class="btn-container">
+        <a href="./play.html" onmouseover="showImage(1)" onmouseout="hideImage(1)">
+            <p class="btnTop">遊戲玩法介紹</p>
+        </a>
+        <a href="./gameNpc.html" onmouseover="showImage(2)" onmouseout="hideImage(2)">
+            <p class="btnTop">角色人物介紹</p>
+        </a>
+        <a href="./movie.html" onmouseover="showImage(3)" onmouseout="hideImage(3)">
+            <p class="btnTop">遊戲宣傳影片</p>
+        </a>
+        <a href="./download.html" onmouseover="showImage(4)" onmouseout="hideImage(4)">
+            <p class="btnTop">遊戲檔案下載</p>
+        </a>
+    </div>
+
+    <div class="btn-container">
+        <img src="./img/3299_cover_image_app.png" class="btnImg1">
+        <img src="./img/3299_cover_image_app.png" class="btnImg2">
+        <img src="./img/3299_cover_image_app.png" class="btnImg3">
+        <img src="./img/3299_cover_image_app.png" class="btnImg4">
+    </div>
+
+    <script>
+        function showImage(index) {
+            var imageElement = document.querySelector('.btnImg' + index);
+            imageElement.style.visibility = 'visible';
+        }
+
+        function hideImage(index) {
+            var imageElement = document.querySelector('.btnImg' + index);
+            imageElement.style.visibility = 'hidden';
+        }
+    </script>
+    <hr>
+    <div class="container divLink">
+        <div>
+            <img class="imgLeft" src="./img/ToK_Link_Artwork.png">
+        </div>
+        <div>
+            <h1 class="text">林克</h1>
+            <p class="text">林克是塞爾達傳說系列的主角。他在整個系列中出現過許多化身，通常被描繪成一個普通的男孩或年輕人，通過勇敢的壯舉拯救世界成為傳奇英雄。
+                他通常是勇氣三角力量的持有者，這是他被金色女神選中的標誌。人們通常看到他揮舞著劍和盾牌，最常見的是大師劍和海利亞盾牌。林克的具體化身可以通過頭銜來區分，例如時之笛中的時之英雄和風之杖中的風之英雄。林克的所有化身都擁有英雄的精神，因此註定要與邪惡作鬥爭。
+            </p>
+        </div>
+    </div>
+    <div class="container divZelda">
+        <div class="divRight">
+            <h1 class="text">薩爾達</h1>
+            <p class="text">
+                薩爾達公主是任天堂遊戲系列「薩爾達傳說」的重要角色。她是海拉魯王國的公主，常需要主角林克的救援。薩爾達公主具有聰明、善良和堅強的性格，在遊戲中指引和支援林克，經常被邪惡勢力綁架，需要拯救。她的形象和角色特質在不同遊戲中有所變化，但一直是薩爾達傳說系列的關鍵角色之一。
+            </p>
+        </div>
+        <img class="imgRight" src="./img/Zelda_sage.png">
+    </div>
+    <div class="container divKing">
+        <div class="divLight">
+            <img class="imgLeft" src="./img/King_Rauru_Extracted.png">
+        </div>
+        <div class="divRight">
+            <h1 class="text">勞魯</h1>
+            <p class="text">
+                勞魯是海拉魯王國的首任國王，同時也是僅剩的左納烏族人。他以堅定的意志和驅魔之力著稱，能夠對抗邪惡力量並保護王國的和平。勞魯個性稍微自傲，但這也是他作為領袖的自信和果斷所在。
+            </p>
+        </div>
+    </div>
+    <div class="container divQueen">
+        <div class="divRight">
+            <h1 class="text">索尼婭</h1>
+            <p class="text">
+                索尼婭是海拉魯王國的首任皇后，她是國王勞魯的妻子。索尼婭擁有特殊的能力，可以控制時間，她是一位智慧和優雅的女性。
+            </p>
+        </div>
+        <img style="width: 700px;;" class="imgRight" src="./img/TotK_Queen_Sonia_Artwork.png">
+    </div>
+    <div class="container divSidon">
+        <div class="divLight">
+            <img class="imgLeft" src="./img/Sidon_Sage.png">
+        </div>
+        <div class="divRight">
+            <h1 class="text">希多</h1>
+            <p class="text">
+                希多是一名在登場的男性卓拉族人，是當代卓拉王的兒子，以及英傑米法的弟弟・希多擔當起更多管理領地的責任，並再次與林克解決領地被污泥覆蓋的危機，之後希多不僅繼承先祖的力量成為水之賢者，更是被父親認可成為卓拉族的新任國王。
+            </p>
+        </div>
+    </div>
+    <div class="container divRiju">
+        <div class="divRight">
+            <h1 class="text">瑪琪．雅．露珠</h1>
+            <p class="text">
+                瑪琪．雅．露珠，通常被稱為『露珠』，是格魯德族的首領和雷之賢者。儘管她的領導能力非常明智和仁慈，但露珠有時對自己的才能缺乏自信。她是一位富有智慧的領導者，深受部落成員的尊敬和愛戴。露珠經常在她的房間放置沙封毛絨玩具，展現她溫暖和關懷的一面。儘管相對於其他酋長來說她年輕，但露珠以她的才華和決心贏得了族人的支持。她的存在代表著格魯德族的希望和未來，她將引領他們走向更加繁榮和和平的明天。
+            </p>
+        </div class="divLight">
+        <img class="imgRight" src="./img/Riju_Sage.png">
+    </div>
+    <div class="container divTulin">
+        <div>
+            <img style=" width:900px;" class="imgLeft" src="./img/Tulin_Sage.png">
+        </div>
+        <div class="divRight">
+            <h1 class="text">丘栗</h1>
+            <p class="text">
+                丘栗是一位年輕的利特戰士，他非常崇敬父親特巴和劍士林克。自小起，他就立志成為一名勇敢的戰士，並實現了自己的願望。丘栗隨著林克一起解決了襲擊村莊的暴風雪危機，展現了他的勇氣和冒險精神。由於他的努力，丘栗繼承了他的先祖的力量，成為這個時代的風之賢者。
+            </p>
+        </div>
+    </div>
+    <div class="container divYunobo">
+        <div class="divRight">
+            <h1 class="text">阿沅</h1>
+            <p class="text">
+                阿沅，鼓隆族的年輕戰士，以其傑出的領導才能和勇敢的精神聞名。他組建了阿沅隊，致力於挖掘礦物、修建鐵軌，並積極發展村莊，為鼓隆族帶來繁榮和發展。儘管引起了可口岩騷動一事，阿沅不斷反省自己，並努力不辜負仰慕者們的期待。他組織阿沅隊，不斷努力建設，以讓鼓隆族更加繁榮。最終，他的卓越努力使他成為火之賢者，成為鼓隆族中威望頗高的人物。
+            </p>
+        </div class="divLight">
+        <img style="width: 800px;" class="imgRight" src="./img/Yunobo_Sage.png">
+    </div>
+    <div class="container divGanondorf">
+        <div>
+            <img class="imgLeft" src="./img/TotK_Ganondorf.png">
+        </div>
+        <div class="divRight">
+            <h1 class="text">魔王加儂多夫</h1>
+            <p class="text">
+                加儂，又稱加儂多夫，是薩爾達傳說系列中的最終魔王，為格魯德族中罕見的男人。加儂組織了一波攻擊勞魯的行動，但後來發現了勞魯的特殊能力的秘密。為了奪取這份力量，他假裝投降並成功獲得了能力。從那時起，他成為了魔王加儂，成為薩爾達傳說系列的主要反派角色。
+            </p>
+        </div>
+    </div>
+    <a href="./gameNpc.html" target="_top">
+        <div id="goTop"><img src="./img/ALttP_Master_Sword_Artwork.png" id="imgTop"></div>
+    </a>
+    
+
+
+
+
+</body>
+
+</html>
