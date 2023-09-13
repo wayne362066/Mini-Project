@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>遊戲宣傳影片</title>
+    <!-- <link rel="stylesheet" href="./_css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/allcss.css">
+    <!-- <script src="./_js/bootstrap.bundle.js"></script> -->
+    <style>
+        body {
+            background-color: rgba(149, 239, 245, 0.425);
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        iframe {
+            width: 80%;
+            height: 700px;
+            display: block;
+            margin: 0 auto;
+            background-color: #4074b5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="top">
+        <a href="./index.html" class="me-auto">
+            <div id="index"><img src="./img/TotK_TCH_Logo.png" id="indexLogo">
+        </a>
+    </div>
+    <div class="btn-container">
+        <a href="./play.html" onmouseover="showImage(1)" onmouseout="hideImage(1)">
+            <p class="btnTop">遊戲玩法介紹</p>
+        </a>
+        <a href="./gameNpc.html" onmouseover="showImage(2)" onmouseout="hideImage(2)">
+            <p class="btnTop">角色人物介紹</p>
+        </a>
+        <a href="./movie.html" onmouseover="showImage(3)" onmouseout="hideImage(3)">
+            <p class="btnTop">遊戲宣傳影片</p>
+        </a>
+        <a href="./download.html" onmouseover="showImage(4)" onmouseout="hideImage(4)">
+            <p class="btnTop">遊戲檔案下載</p>
+        </a>
+    </div>
+
+    <div class="btn-container">
+        <img src="./img/3299_cover_image_app.png" class="btnImg1">
+        <img src="./img/3299_cover_image_app.png" class="btnImg2">
+        <img src="./img/3299_cover_image_app.png" class="btnImg3">
+        <img src="./img/3299_cover_image_app.png" class="btnImg4">
+    </div>
+
+    <script>
+        function showImage(index) {
+            var imageElement = document.querySelector('.btnImg' + index);
+            imageElement.style.visibility = 'visible';
+        }
+
+        function hideImage(index) {
+            var imageElement = document.querySelector('.btnImg' + index);
+            imageElement.style.visibility = 'hidden';
+        }
+    </script>
+    <hr>
+    <div>
+        <h1>遊戲官方宣傳影片</h1>
+        <iframe width="1191" height="670" src="https://www.youtube.com/embed/5PEyUrHB2NE"
+            title="《薩爾達傳說 曠野之息》E3 2019展出影片" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <iframe width="1191" height="670"
+            src="https://www.youtube.com/embed/Y62rvwd0uA4?list=PLTYTU2rFOuKLJ9vnGwzzHi97Cw_vVzCEB"
+            title="《薩爾達傳說 王國之淚》介紹影片" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <iframe width="1191" height="670" src="https://www.youtube.com/embed/Pi-MRZBP91I"
+            title="Sequel to The Legend of Zelda: Breath of the Wild - E3 2021 Teaser - Nintendo Direct" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <iframe width="1191" height="670"
+            src="https://www.youtube.com/embed/FXCB8xKvfpw?list=PLTYTU2rFOuKLJ9vnGwzzHi97Cw_vVzCEB"
+            title="《薩爾達傳說 王國之淚》第2部介紹影片" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <iframe width="1191" height="670"
+            src="https://www.youtube.com/embed/omOOGfivXQs?list=PLTYTU2rFOuKLJ9vnGwzzHi97Cw_vVzCEB"
+            title="《薩爾達傳說 王國之淚》第3部介紹影片（台灣）" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <iframe width="1191" height="670"
+            src="https://www.youtube.com/embed/J1lDJFdYJkI?list=PLTYTU2rFOuKLJ9vnGwzzHi97Cw_vVzCEB"
+            title="製作人青沼英二遊玩《薩爾達傳說 王國之淚》影片（台灣）" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+    </div>
+
+
+    <a href="./movie.html" target="_top">
+        <div id="goTop"><img src="./img/ALttP_Master_Sword_Artwork.png" id="imgTop"></div>
+    </a>
+
+
+
+
+
+</body>
+
+</html>

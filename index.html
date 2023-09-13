@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>薩爾達傳說-王國之淚</title>
+    <!-- <link rel="stylesheet" href="./_css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./css/allcss.css">
+    <!-- <script src="./_js/bootstrap.bundle.js"></script> -->
+    <style>
+        body {
+            background-color: rgba(149, 239, 245, 0.425);
+            margin: 0px;
+        }
+
+        div>h1 {
+            text-align: center;
+            font-size: 72px;
+            color: rgb(74, 215, 158);
+            text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+        }
+
+        iframe {
+            width: 80%;
+            height: 700px;
+            display: block;
+            margin: 0 auto;
+            background-color: #4074b5;
+        }
+
+        .game-description {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .game-description h2 {
+            margin: 0;
+        }
+
+        .msg {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            color: #00000088;
+        }
+
+        .msg h3 {
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="top">
+        <a href="./index.html" class="me-auto">
+            <div id="index"><img src="./img/TotK_TCH_Logo.png" id="indexLogo">
+        </a>
+    </div>
+    <div class="btn-container">
+        <a href="./play.html" onmouseover="showImage(1)" onmouseout="hideImage(1)">
+            <p class="btnTop">遊戲玩法介紹</p>
+        </a>
+        <a href="./gameNpc.html" onmouseover="showImage(2)" onmouseout="hideImage(2)">
+            <p class="btnTop">角色人物介紹</p>
+        </a>
+        <a href="./movie.html" onmouseover="showImage(3)" onmouseout="hideImage(3)">
+            <p class="btnTop">遊戲宣傳影片</p>
+        </a>
+        <a href="./download.html" onmouseover="showImage(4)" onmouseout="hideImage(4)">
+            <p class="btnTop">遊戲檔案下載</p>
+        </a>
+    </div>
+
+    <div class="btn-container">
+        <img src="./img/3299_cover_image_app.png" class="btnImg1">
+        <img src="./img/3299_cover_image_app.png" class="btnImg2">
+        <img src="./img/3299_cover_image_app.png" class="btnImg3">
+        <img src="./img/3299_cover_image_app.png" class="btnImg4">
+    </div>
+
+    <script>
+        function showImage(index) {
+            var imageElement = document.querySelector('.btnImg' + index);
+            imageElement.style.visibility = 'visible';
+        }
+
+        function hideImage(index) {
+            var imageElement = document.querySelector('.btnImg' + index);
+            imageElement.style.visibility = 'hidden';
+        }
+    </script>
+    <hr>
+    <div>
+        <h1>薩爾達傳說-王國之淚</h1>
+    </div>
+    <div class="game-description">
+        <h2>《薩爾達傳說
+            王國之淚》是一款於2023年5月12日發售的遊戲。這款遊戲以其高度自由的遊玩方式而聞名，玩家能夠展開各種多變的冒險。遊戲中提供了豐富的玩法選擇，讓玩家可以根據自己的創意製作武器、機器，用來應對怪物、解謎甚至實現快速移動。此外，遊戲中還有許多不同的神廟挑戰以及強大的Boss等待著玩家挑戰。透過這些元素，玩家將獲得一個豐富多彩且具有挑戰性的遊戲體驗。
+        </h2>
+    </div>
+    <br><br><br>
+    <iframe src="https://www.youtube.com/embed/Y62rvwd0uA4" title="《薩爾達傳說 王國之淚》介紹影片" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <div class="msg">
+        <h3>本網頁所有資料、圖片和影片僅為參考使用，來源皆取自網路。所有相關版權均屬於其原始所有者，此處僅做引用之用，不構成侵權行為。任天堂是相關內容的版權所有者，此處僅為展示該公司的作品和向其致敬之意。若有侵犯任何版權或知識產權的問題，請聯繫原始所有者以獲得授權或進行相應調整。謝謝。
+        </h3>
+    </div>
+    <br><br><br><br><br><br>
+    <a href="./index.html" target="_top">
+        <div id="goTop"><img src="./img/ALttP_Master_Sword_Artwork.png" id="imgTop"></div>
+    </a>
+    
+
+
+
+
+</body>
+
+</html>
